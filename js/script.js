@@ -82,6 +82,28 @@ $(function(){
             });
         }
     });
+
+
+    /*
+    * Sticky menu
+    * */
+
+    var topNavElement = $('.top_nav'),
+        stickyNavTop = topNavElement.offset().top,
+        stickyNav = function() {
+        var scrollTop = $(window).scrollTop();
+
+        if (scrollTop > stickyNavTop) {
+            topNavElement.addClass('sticky');
+        } else {
+            topNavElement.removeClass('sticky');
+        }
+    };
+
+    stickyNav();
+
+    $(window).scroll(function() {
+        stickyNav();
+    });
+
 });
-
-
