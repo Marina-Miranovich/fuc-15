@@ -220,6 +220,10 @@ a {
     color: #909090;
 }
 
+.active {
+    display: block;
+}
+
 
 @media (max-width: 800px) {
     .nav_item {

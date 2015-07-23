@@ -117,15 +117,13 @@ $(function(){
 
         var overlay = $(".overlay");
 
-        $('.popup').fadeOut();
-
+        popup.addClass('active');
         recalculateTopLeft();
         overlay.show();
-        popup.fadeIn();
     });
 
     $('.popup_close').click(function() {
-        $('.popup').hide();
+        $('.popup').removeClass('active');
         $(".overlay").hide();
     });
 
@@ -134,8 +132,13 @@ $(function(){
     });
 
     function recalculateTopLeft() {
-        var popup = $(".popup"),
-            screenWidth = $(window).width(),
+        var popup = $(".active");
+
+        if (popup.length < 1) {
+            return;
+        }
+
+        var screenWidth = $(window).width(),
             screenHeight = $(window).height(),
             popupWidth = popup.width(),
             popupHeight = popup.height(),
