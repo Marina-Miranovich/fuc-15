@@ -106,4 +106,55 @@ $(function(){
         stickyNav();
     });
 
+
+    /* Popups */
+    $('.speaker_wrapper').click(function() {
+        var popup = $("." + $(this).data('url'));
+
+        if (popup.css('display') === 'block') {
+            return false;
+        }
+
+        var overlay = $(".overlay");
+
+        $('.popup').fadeOut();
+
+        recalculateTopLeft();
+        overlay.show();
+        popup.fadeIn();
+    });
+
+    $('.popup_close').click(function() {
+        $('.popup').hide();
+        $(".overlay").hide();
+    });
+
+    $(window).resize(function(){
+        recalculateTopLeft();
+    });
+
+    function recalculateTopLeft() {
+        var popup = $(".popup"),
+            screenWidth = $(window).width(),
+            screenHeight = $(window).height(),
+            popupWidth = popup.width(),
+            popupHeight = popup.height(),
+            paddingTop = popup.css("padding-top"),
+            paddingBottom = popup.css("padding-bottom"),
+            paddingLeft = popup.css("padding-left"),
+            paddingRight = popup.css("padding-right");
+
+        paddingTop = parseInt(paddingTop.substr(0, paddingTop.length - 2));
+        paddingBottom = parseInt(paddingBottom.substr(0, paddingBottom.length - 2));
+        paddingLeft = parseInt(paddingLeft.substr(0, paddingLeft.length - 2));
+        paddingRight = parseInt(paddingRight.substr(0, paddingRight.length - 2));
+        var left = ( ( (screenWidth - popupWidth - paddingLeft - paddingRight) / 2 ) / screenWidth ) * 100;
+        var top = ( ( (screenHeight - popupHeight - paddingTop - paddingBottom) / 2 ) / screenHeight ) * 100;
+
+        popup.css({
+            top: top + '%',
+            left: left + '%'
+        });
+    }
+
 });
