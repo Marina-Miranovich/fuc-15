@@ -123,3 +123,13 @@
 <nav_item_sponsors "Sponsors">
 <nav_item_moscow_guide "Moscow Guide">
 <nav_item_about "About">
+
+<nav_item_speakers_header "Speakers">
+<speaker1_theme "Styleguide first">
+<speaker2_theme "Isomorphic React-apps testing">
+<speaker3_theme "XSS wars. The Force Awakens">
+<speaker4_theme "Three stories about testing">
+<speaker5_theme "Create collaborative applications using diffsync">
+<speaker6_theme "Generators">
+<speaker7_theme "Farewell, jQuery!">
+<speaker8_theme "Communities">

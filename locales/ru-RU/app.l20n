@@ -123,3 +123,13 @@
 <nav_item_sponsors "Спонсоры">
 <nav_item_moscow_guide "Гид по Москве">
 <nav_item_about "О конференции">
+
+<nav_item_speakers_header "Докладчики">
+<speaker1_theme "Сначала стайлгайд — подход к разработке UI компонентов">
+<speaker2_theme "Тестирование изоморфных React-приложений">
+<speaker3_theme "XSS войны. Пробуждение силы">
+<speaker4_theme "Три истории о тестировании">
+<speaker5_theme "Создание приложений для совместного редактирования документов с использованием DiffSync">
+<speaker6_theme "Генераторы">
+<speaker7_theme "Прощай, jQuery!">
+<speaker8_theme "Сообщества">
