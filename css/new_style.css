@@ -182,11 +182,9 @@ a {
 
 .speaker_wrapper_popup {
     min-height: 120px;
-    width: 480px;
     vertical-align: top;
     display: inline-block;
     position: relative;
-    margin-left: 20px;
 }
 
 .speaker_links {
