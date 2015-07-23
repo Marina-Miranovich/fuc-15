@@ -115,6 +115,8 @@ $(function(){
             return false;
         }
 
+        $('.popup').removeClass('active');
+
         var overlay = $(".overlay");
 
         popup.addClass('active');
