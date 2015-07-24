@@ -149,7 +149,7 @@ a {
 
 .overlay {
     position: fixed;
-    background-color: rgba(0,0,0, 0.2);
+    background-color: rgba(255,255,255, 0.2);
     top:0;
     left:0;
     width: 100%;
@@ -236,10 +236,11 @@ a {
 
 .imaguru {
     width: 50%;
+    z-index: 10;
 }
 
 .place {
-    background: #faa732;
+    background: #3788c8;
 }
 
 .active {
