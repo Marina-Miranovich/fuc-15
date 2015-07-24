@@ -220,8 +220,8 @@ a {
     display: block;
     position: absolute;
     font-size: 60px;
-    top: 22px;
-    right: 22px;
+    top: 3px;
+    right: 3px;
     line-height: 44px;
     height: 48px;
     width: 48px;
@@ -361,11 +361,6 @@ Style the navigation menu
 
     .popup {
         max-width: 95%;
-    }
-
-    .popup_close {
-        top: 3px;
-        right: 3px;
     }
 
     .popup p {
