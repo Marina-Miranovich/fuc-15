@@ -153,7 +153,7 @@ $(function(){
     });
 
     $('.overlay').click(function() {
-        $(this).hide();
+        $('.overlay').hide();
         $('.popup').removeClass('active');
     });
 

@@ -303,6 +303,24 @@ Style the navigation menu
     vertical-align: bottom;
 }
 
+.communities {
+    color: black;
+}
+
+.communities .speaker_wrapper {
+    padding-top: 12px;
+}
+
+.community_organizers {
+    font-size: 16px !important;
+    font-style: italic;
+    color: #444;
+}
+
+.community_fb {
+    text-transform: lowercase;
+}
+
 @media (max-width: 1040px) {
     .speaker_photo {
         position: static;
