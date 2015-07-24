@@ -124,6 +124,11 @@ $(function(){
         overlay.show();
     });
 
+    $('.overlay').click(function() {
+        $(this).hide();
+        $('.popup').removeClass('active');
+    });
+
     $('.popup_close').click(function() {
         $('.popup').removeClass('active');
         $(".overlay").hide();

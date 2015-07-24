@@ -183,7 +183,6 @@ a {
 .speaker_wrapper_popup {
     min-height: 120px;
     vertical-align: top;
-    display: inline-block;
     position: relative;
 }
 
@@ -239,6 +238,26 @@ a {
     }
 
     .popup {
-        max-width: 90%;
+        max-width: 95%;
     }
+
+    .popup_close {
+        top: 3px;
+        right: 3px;
+    }
+}
+
+@media (max-width: 380px) {
+    .speaker_photo {
+        position: static;
+    }
+
+    .speaker_info {
+        padding: 5px;
+    }
+
+    .speaker_wrapper_popup {
+        height: 90%;
+    }
+
 }
