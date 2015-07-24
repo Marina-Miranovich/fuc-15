@@ -74,6 +74,10 @@ $(function(){
         }
     });
 
+
+
+    var MAX_MOBILE_SCREEN_WIDTH = 900;
+
     $(window).resize(function(){
         var section = $('.section.open');
         if(section.length){
@@ -81,6 +85,14 @@ $(function(){
                 $(this).height($(this).find('.no-inside').outerHeight());
             });
         }
+
+
+        var screenWidth = $(window).width();
+
+        isMobile = (screenWidth <= MAX_MOBILE_SCREEN_WIDTH);
+
+        stickyNav();
+        recalculateTopLeft();
     });
 
 
@@ -89,20 +101,35 @@ $(function(){
     * */
 
     var topNavElement = $('.top_nav'),
+        screenWidth = $(window).width(),
+        isMobile = (screenWidth <= MAX_MOBILE_SCREEN_WIDTH),
         stickyNavTop = topNavElement.offset().top,
         stickyNav = function() {
             var scrollTop = $(window).scrollTop();
 
             if (scrollTop > stickyNavTop) {
-                topNavElement.addClass('sticky');
+                if (isMobile) {
+                    topNavElement.hide();
+                    $('.top_nav_mobile').show();
+                }
+                else {
+                    $('.top_nav_mobile').hide();
+                    topNavElement.show();
+                    topNavElement.addClass('sticky')
+                }
             }
             else {
+                if (isMobile) {
+                    topNavElement.show();
+                    $('.top_nav_mobile').hide();
+                }
+                
                 topNavElement.removeClass('sticky');
             }
+
     };
 
     stickyNav();
-
     $(window).scroll(function() {
         stickyNav();
     });
@@ -130,14 +157,32 @@ $(function(){
         $('.popup').removeClass('active');
     });
 
+
+    /* Mobile */
+    $('.hamburger').click(function(event) {
+        $('.mobile_menu').show();
+        $('.overlay_mobile_menu').show();
+    });
+
+    $('.overlay_mobile_menu').click(function() {
+        $(this).hide();
+
+        var mobile_menu = $('.mobile_menu');
+        if (mobile_menu.css('display') === 'block') {
+            mobile_menu.hide();
+        }
+    });
+
+    //disable all scrolling on mobile devices while menu is shown
+    jQuery('.overlay_mobile_menu').bind('touchmove', function (e) {
+        e.preventDefault()
+    });
+
     $('.popup_close').click(function() {
         $('.popup').removeClass('active');
         $(".overlay").hide();
     });
 
-    $(window).resize(function(){
-        recalculateTopLeft();
-    });
 
     function recalculateTopLeft() {
         var popup = $(".active");
