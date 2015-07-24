@@ -104,8 +104,8 @@
 <videoReport "Video report from What the Hack 2014">
 
 <whenAndWhere "Time and Place">
-<when "March 27-29, 2015">
-<where "Startup HUB Imaguru<br />Minsk (Fabriciusa str., 4)">
+<when "August 29, 2015">
+<where "Mail.Ru Office<br />Moscow (125167, Leningradsky pr. 39)">
 
 <organizers "Organizers">
 <partners "Partners">
@@ -134,7 +134,7 @@
 <speaker7_theme "Farewell, jQuery!">
 <speaker8_theme "Communities">
 
-<speaker1_speech "Living Style guides are a new frontend development trend. The next logical step is to develop the components to turn them into sandboxes for new interfaces. By adopting such workflow, the developers will be able to stop “developing the pages” and move to developing independent components that constitute pages. Development effort will get a considerable speed and quality boost. This talk is based on the experience of two Finnish companies – SC5 Online и Elisa – that promote this philosophy with their own open source tools. ">
+<speaker1_speech "Living Style guides are a new frontend development trend.<br /> The next logical step is to develop the components to turn them into sandboxes for new interfaces. By adopting such workflow, the developers will be able to stop “developing the pages” and move to developing independent components that constitute pages.<br /> Development effort will get a considerable speed and quality boost. This talk is based on the experience of two Finnish companies – SC5 Online и Elisa – that promote this philosophy with their own open source tools. ">
 <speaker2_speech "Reactjs is a powerful tool for creating dynamic web-apps. While isomorphic projects grow in popularity, testing them still summons a soft quake in the minds of developers. What tools to use and how to use them? What to be afraid of? Where to look for answers?">
 <speaker3_speech "Nowadays lots of users store their private data in the Internet. Users have developed the habit of syncing all their photos, contacts or even credit card stuff via clouds. We, the web developers, have to give them confidence in their data’s protection and make sure it will never be stolen by a bunch of guys in masks. I'll reveal the secrets of XSS attacks and the methods of defense against them. I'll also introduce a couple of examples to improve your awareness: how easy it is to execute an XSS attack; and how you can protect the privacy of your users by employing different tools such as CSP, X-Frame-Options, X-XSS-Protection and others. It will be a lot of fun. ">
 <speaker4_speech "If you ever took an interest in testing, you probably know how to test a TODO app (no less than one in every three testing-related articles tells about that) or remember the Wikipedia definition of TDD and Unit Testing by heart. So I will not be speaking about that. I will offer you three stories about a project's zing! and how testing is involved with it. These stories teach how to start writing tests, how to maintain them — and how to preserve your faith.">
@@ -145,11 +145,11 @@
 
 <nav_item_communities_header "Communities">
 <community_organizer "Organizers:">
-<community1_description "Minsk web designer/developer community. Our goals:
-                         - promote web-related technologies (HTML5, JS, CSS3, SVG, canvas, etc.) and advanced strategies (Responsive Web Design, Adaptive Web Design, Progressive Enhancement, etc.);
-                         - exchange knowledge;
-                         - support and engage in open source;
-                         - encourage and propogate the development of web standards and web as a whole.">
+<community1_description "Minsk web designer/developer community. Our goals:<br />
+                         - promote web-related technologies (HTML5, JS, CSS3, SVG, canvas, etc.) and advanced strategies (Responsive Web Design, Adaptive Web Design, Progressive Enhancement, etc.);<br />
+                         - exchange knowledge;<br />
+                         - support and engage in open source;<br />
+                         - encourage and propogate the development of web standards and web as a whole.<br />">
 <community2_description "">
 <community3_description "">
 <community4_description "">

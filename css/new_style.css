@@ -230,6 +230,18 @@ a {
     color: #909090;
 }
 
+.section-13 {
+    background: #fff;
+}
+
+.imaguru {
+    width: 50%;
+}
+
+.place {
+    background: #faa732;
+}
+
 .active {
     display: block;
 }

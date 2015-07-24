@@ -22,7 +22,7 @@ $(function(){
 
     var  initialize = function() {
         var mapOptions = {
-            center: new google.maps.LatLng(53.8907667,27.5372905),
+            center: new google.maps.LatLng(55.797042, 37.537526),
             zoom: 17,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             panControl: false,
@@ -41,7 +41,7 @@ $(function(){
         var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
         var marker1 = new google.maps.Marker({
-            position: new google.maps.LatLng(53.8907667,27.5372905),
+            position: new google.maps.LatLng(55.797042, 37.537526),
             map: map,
             icon: markerImage1
         });
