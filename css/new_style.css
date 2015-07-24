@@ -1,5 +1,6 @@
 body {
     font-family: "FontAwesome", sans-serif !important;
+    overflow-x:hidden;
 }
 
 a {
@@ -221,20 +222,41 @@ a {
     display: block;
 }
 
+@media (max-width: 1040px) {
+    .speaker_photo {
+        position: static;
+        margin-left: 40px;
+    }
 
-@media (max-width: 800px) {
+    .speaker_info {
+        padding: 5px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .top_nav {
+        padding: 7px;
+    }
+
     .nav_item {
         width: 100%;
-        padding: 15px;
+        font-size: 16px;
+        padding: 5px;
     }
 
     .speakers_wrapper {
         width: 100%;
+        text-align: center;
     }
 
     .speaker_wrapper {
         display: block;
         width: 90%;
+    }
+
+    .speaker_info {
+        text-align: center;
     }
 
     .popup {
@@ -244,6 +266,10 @@ a {
     .popup_close {
         top: 3px;
         right: 3px;
+    }
+
+    .popup p {
+        text-align: center;
     }
 }
 
