@@ -123,7 +123,7 @@ $(function(){
                     topNavElement.show();
                     $('.top_nav_mobile').hide();
                 }
-                
+
                 topNavElement.removeClass('sticky');
             }
 
