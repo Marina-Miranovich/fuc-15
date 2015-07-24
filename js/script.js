@@ -16,7 +16,7 @@ $(function(){
 
 
     // map
-    markerImage = "../images/marker.png";
+    markerImage = "images/marker.png";
 
     var markerImage1 = new google.maps.MarkerImage(markerImage, null, null, new google.maps.Point(15,40), new google.maps.Size(25,40));
 
