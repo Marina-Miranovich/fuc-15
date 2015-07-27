@@ -133,6 +133,13 @@ a {
     transition: transform .1s ease-out;
 }
 
+.popup .speaker_photo {
+    float: left;
+    width: 220px;
+    height: 220px;
+    margin: 0 20px 10px 0;
+}
+
 .speaker_wrapper .meta {
     display: inline-block;
     vertical-align: top;
@@ -141,10 +148,21 @@ a {
 }
 .speaker_wrapper .meta a {
     font-size: 16px;
-    line-height: 30px;
     background: transparent;
     color: #1f419b;
     font-weight: bold;
+}
+.speaker_wrapper .meta a:hover {
+    color: black;
+}
+.speaker_wrapper .meta a:before {
+    content: "• ";
+}
+.speaker_wrapper .meta a:hover:before {
+    color: #1f419b;
+}
+.speaker_wrapper .meta a:first-of-type:before {
+    content: "";
 }
 
 .speaker_info {
@@ -169,16 +187,27 @@ a {
     text-align: justify;
 }
 
+.sponsors li{
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 35px;
+}
+.sponsors img {
+  max-width: 170px;
+  max-height: 120px;
+}
+
 /* Popups */
 
 .overlay {
     position: fixed;
-    background-color: rgba(0,0,0, 0.5);
     top:0;
     left:0;
     width: 100%;
     height: 100%;
     display: none;
+    background-color: rgba(0,0,0, 0.5);
 }
 
 .overlay_mobile_menu {
@@ -200,10 +229,9 @@ a {
     z-index: 9999;
     display: none;
     overflow: auto;
-    border: 3px solid #999;
     box-shadow: 0 1px 17px 9px rgba(0, 0, 0, 0.4);
     background-color: #fff;
-    text-align: center;
+    text-align: left;
 }
 
 .popup .speaker_wrapper {
@@ -214,7 +242,6 @@ a {
 .popup p {
     font-size: 18px;
     margin: 10px 0;
-    text-align: justify;
 }
 
 .speaker_wrapper_popup {
@@ -227,17 +254,20 @@ a {
     margin: 5px 0;
     font-size: 16px;
 }
-
-.speaker_twitter:hover {
-    text-decoration: underline;
+.speaker_links a {
+    color: #1f419b;
 }
 
-.speaker_sponsor:hover {
-    text-decoration: underline;
+.speaker_links a:hover {
+    color: #000;
 }
 
-.speaker_twitter {
-    text-transform: lowercase;
+.speaker_twitter:after {
+    content: " •";
+}
+
+.speaker_twitter:hover:after {
+    color: #1f419b;
 }
 
 .popup_close {
@@ -260,7 +290,6 @@ a {
 
 .mail_ru {
     width: 50%;
-    z-index: 10;
 }
 
 .when-block .main-caption {
@@ -362,6 +391,11 @@ Style the navigation menu
 .communities {
     color: black;
     background-color: #f4f4f4;
+}
+
+.communities img {
+    width: 300px;
+    height: 300px;
 }
 
 .communities .community {

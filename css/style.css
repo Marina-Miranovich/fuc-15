@@ -647,7 +647,6 @@ a:active{
     text-align: left;
     padding: 30px 100px 90px;
     background-color: #ff512c;
-    z-index: 10;
 }
 
 .date-event{
@@ -663,7 +662,6 @@ a:active{
     display: block;
     width: auto;
     margin: -70px auto 0px;
-    z-index: 100;
 }
 
 /* 14 */
