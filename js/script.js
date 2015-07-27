@@ -133,7 +133,7 @@ $(function(){
 
 
     /* Popups */
-    $('.speaker_wrapper').click(function() {
+    $('.show_popup').click(function() {
         var popup = $("." + $(this).data('url'));
 
         if (popup.css('display') === 'block') {
