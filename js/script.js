@@ -36,7 +36,7 @@ $(function(){
         };
 
         var mapElement = document.getElementById('map');
-        
+
         if (mapElement === null) {
             return;
         }

@@ -399,6 +399,35 @@ Style the navigation menu
     cursor: pointer;
 }
 
+.acknowledgements {
+    color: black;
+    padding: 40px 40px 80px;
+}
+
+.acknowledgementsTitle {
+    font-size: 27px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1f419b;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.acknowledgementsList {
+    list-style: circle;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.acknowledgementsTwitter {
+    cursor: pointer;
+    color: #168de2;
+}
+
+.acknowledgementsTwitter:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 1040px) {
     .speaker_photo {
         position: static;
