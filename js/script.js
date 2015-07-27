@@ -1,7 +1,4 @@
 $(function(){
-    $('#defaultCountdown').countdown({
-        date: "March 27, 2015 19:00:00"
-    });
 
     document.l10n.addEventListener('ready', function(a,b){
       if(document.l10n.supportedLocales.length){

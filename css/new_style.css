@@ -22,7 +22,8 @@ a {
 }
 
 .header_date {
-    padding: 2em;
+    font-size: 0.8em;
+    line-height: 1.8em;
 }
 
 .logo {
@@ -33,9 +34,13 @@ a {
     display: inline-block;
     margin-right: 2em;
     font-size: 20px;
+    line-height: 41px;
     text-transform: uppercase;
     color: #fff;
     white-space: nowrap;
+}
+.social_item {
+   display: inline-block; 
 }
 
 .lang {
@@ -45,18 +50,18 @@ a {
 }
 
 .social {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     display: inline-block;
-    vertical-align: bottom;
+    vertical-align: middle;
 }
 
 .twitter {
-    background: url("../images/soc.png") 40px 40px;
+    background: url("../images/soc.png") 32px 32px;
 }
 
 .facebook {
-    background: url("../images/soc.png") 0 40px;
+    background: url("../images/soc.png") 0 32px;
 }
 
 .sticky {
@@ -67,8 +72,7 @@ a {
     z-index: 100;
     border-top: 0;
     margin: 0;
-    padding: 30px;
-    padding-bottom: 40px;
+    padding: 18px;
     background: url('../images/s2-bg.jpg') no-repeat center center fixed #333;
     background-size: cover;
 }
@@ -86,28 +90,27 @@ a {
     font-weight: 700;
     text-transform: uppercase;
     color: #1f419b;
-    padding: 20px 0;
-    border-top: 1px solid #e3e3e3;
-    border-bottom: 1px solid #e3e3e3;
-    margin: 30px 0;
-    display: inline-block;
+    padding: 40px 0;
+}
+.speakers_header:before {
+    content: "~ ";
+}
+.speakers_header:after {
+    content: " ~";
 }
 
 .speakers_wrapper {
-    width: 1000px;
-    margin: 30px auto;
-    text-align: left;
+    text-align: center;
 }
 
 .speaker_wrapper {
     cursor: pointer;
     min-height: 120px;
-    width: 480px;
+    width: 320px;
     vertical-align: top;
     display: inline-block;
-    position: relative;
-    margin-bottom: 40px;
-    margin-left: 20px;
+    margin: 40px 20px;
+    text-align: left;
 }
 
 .speaker_wrapper:hover > .speaker_photo {
@@ -115,21 +118,26 @@ a {
 }
 
 .speaker_photo {
-    position: absolute;
     width: 114px;
     height: 114px;
-    left: 0;
-    top: -25px;
-    border: 3px solid #f1e249;
-    border-radius: 100%;
+    border-radius: 10%;
     transition: transform .1s ease-out;
 }
 
+.speaker_wrapper .meta {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0 0 0 10px;
+}
+.speaker_wrapper .meta .twitter,
+.speaker_wrapper .meta .community {
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+}
+
 .speaker_info {
-    margin-bottom: 0;
-    padding-left: 140px;
-    padding-right: 10px;
-    text-align: left;
+    padding: 10px 0 0;
 }
 
 .speaker_name {
@@ -155,7 +163,7 @@ a {
 
 .overlay {
     position: fixed;
-    background-color: rgba(255,255,255, 0);
+    background-color: rgba(0,0,0, 0.5);
     top:0;
     left:0;
     width: 100%;
@@ -175,8 +183,8 @@ a {
 }
 
 .popup {
-    max-width: 40%;
-    max-height: 60%;
+    max-width: 50%;
+    max-height: 90%;
     padding: 2em;
     position: fixed;
     z-index: 9999;
