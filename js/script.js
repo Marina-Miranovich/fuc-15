@@ -35,7 +35,12 @@ $(function(){
             scrollwheel: false
         };
 
-        var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+        var mapElement = document.getElementById('map');
+
+        if (mapElement === null) {
+            return;
+        }
+        var map = new google.maps.Map(mapElement, mapOptions);
 
         var marker1 = new google.maps.Marker({
             position: new google.maps.LatLng(55.797042, 37.537526),
