@@ -382,6 +382,23 @@ Style the navigation menu
     text-transform: lowercase;
 }
 
+.organizer {
+    vertical-align: top;
+    display: inline-block;
+    margin: 40px 20px;
+    text-align: left;
+}
+
+.organizerInfo {
+    color: red;
+    display: block;
+    font-size: 16px;
+}
+
+.organizerTwitter {
+    cursor: pointer;
+}
+
 @media (max-width: 1040px) {
     .speaker_photo {
         position: static;
