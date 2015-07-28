@@ -19,7 +19,7 @@ $(function(){
 
     var  initialize = function() {
         var mapOptions = {
-            center: new google.maps.LatLng(55.797042, 37.537526),
+            center: new google.maps.LatLng(55.797142, 37.540426),
             zoom: 17,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             panControl: false,

@@ -602,17 +602,10 @@ a:active{
     background-color: #9b59b6;
 }
 
-#map,
-.when-block{
-    display: inline-block;
-    vertical-align: top;
+#map {
+    width: 100%;
+    height: 600px;
 }
-    #map {
-        width: 500px;
-        height: 500px;
-        max-width: 500px;
-        border: 2px solid white;
-    }
 
     iframe {
         max-width: 900px;
@@ -631,22 +624,8 @@ a:active{
     }
 }
 
-
-.when-block{
-    position: relative;
-    text-align: right;
-    margin-left: -45px;
-}
-
 .when-block .main-caption{
     margin: -15px 0px 25px;
-}
-
-.place{
-    position: relative;
-    text-align: left;
-    padding: 30px 100px 90px;
-    background-color: #ff512c;
 }
 
 .date-event{
