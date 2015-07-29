@@ -577,4 +577,8 @@ Style the navigation menu
         height: 90%;
     }
 
+    .communities .community {
+        margin: 40px 0;
+    }
+
 }

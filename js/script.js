@@ -21,6 +21,9 @@ $(function(){
     var MEDIUM_BREAK_POINT = 1450;
     var MEDIUM_MAP_CENTER_LAT = 55.797042;
     var MEDIUM_MAP_CENTER_LNG = 37.540526;
+    var SMALL_BREAK_POINT = 800;
+    var SMALL_MAP_CENTER_LAT = 55.797842;
+    var SMALL_MAP_CENTER_LNG = 37.537526;
 
     var getCenterCoords = function () {
         var screenWidth = $(window).width();
@@ -29,6 +32,11 @@ $(function(){
             return {
                 lat: HUGE_MAP_CENTER_LAT,
                 lng: HUGE_MAP_CENTER_LNG
+            };
+        } else if (screenWidth < SMALL_BREAK_POINT) {
+            return {
+                lat: SMALL_MAP_CENTER_LAT,
+                lng: SMALL_MAP_CENTER_LNG
             };
         } else {
             return {
