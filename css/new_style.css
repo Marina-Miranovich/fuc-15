@@ -221,9 +221,9 @@ a {
 }
 
 .popup {
-    max-width: 50%;
+    max-width: 70%;
     max-height: 90%;
-    padding: 2em;
+    padding: 50px 20px;
     position: fixed;
     z-index: 9999;
     display: none;
@@ -336,8 +336,7 @@ a {
     z-index: 100;
     border-top: 0;
     margin: 0;
-    padding: 30px;
-    padding-bottom: 40px;
+    padding: 15px 0 15px 10px;
     background: url('../images/s2-bg.jpg') no-repeat center center fixed #333;
     background-size: cover;
 }
@@ -426,6 +425,11 @@ Style the navigation menu
     text-decoration: underline;
 }
 
+#map {
+    width: 100%;
+    height: 600px;
+}
+
 .organizer {
     vertical-align: top;
     display: inline-block;
@@ -473,13 +477,14 @@ Style the navigation menu
 }
 
 @media (max-width: 1040px) {
-    .speaker_photo {
-        position: static;
-        margin-left: 40px;
+    .when-block {
+        width: 490px;
     }
+}
 
-    .speaker_info {
-        padding: 5px;
+@media (max-width: 940px) {
+    .speaker_wrapper {
+        margin: 30px 10px;
     }
 }
 
@@ -498,8 +503,12 @@ Style the navigation menu
 
     .speaker_wrapper {
         display: block;
-        width: 100%;
-        margin-left: 0;
+        width: 450px;
+        margin: 30px auto;
+    }
+
+    .speaker_name {
+        line-height: 20px;
     }
 
     .speaker_info {
@@ -507,22 +516,57 @@ Style the navigation menu
     }
 
     .speaker_photo {
-        margin-left: 0;
+        width: 150px;
+        height: 150px;
     }
 
     .popup {
         max-width: 95%;
     }
 
-    .popup p {
-        text-align: center;
+    .popup .speaker_photo {
+        display: block;
+        float: none;
+        width: 300px;
+        height: 300px;
+        margin: auto;
     }
 
 }
 
-@media (max-width: 380px) {
+@media (max-width: 870px) {
+    .when-block {
+        top: 20px;
+        right: 20px;
+        width: 280px;
+    }
+    .place {
+        padding: 30px 30px 40px;
+    }
+    .mail_ru {
+        margin-top: -30px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .speaker_wrapper {
+        width: 300px;
+        margin: 80px auto;
+    }
+
+    .speaker_wrapper:first-child {
+        margin-top: 30px;
+    }
+
     .speaker_photo {
-        position: static;
+        width: 300px;
+        height: 300px;
+    }
+
+    .speaker_wrapper .meta {
+        max-width: 300px;
+        margin: 10px 0 0;
     }
 
     .speaker_info {
