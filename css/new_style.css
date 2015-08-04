@@ -12,13 +12,38 @@ a {
 */
 
 .top_header {
-    background: url('../images/s2-bg.jpg') no-repeat center center fixed #333;
+    background: rgb(26, 26, 26);
     background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
 }
 
+.lang-toggle {
+    display: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.lang-active {
+    display: inline-block;
+}
+
+.lang-wrapper {
+    width: 5%;
+    display: inline-block;
+}
+
+.lang a {
+    font-size: 0.5em;
+}
+
+
 .top_nav {
-    width: 100%;
-    margin: 30px auto 0 auto;
+    width: 90%;
+    display: inline-block;
+    padding-left: 5%;
 }
 
 .header_date {
@@ -27,17 +52,21 @@ a {
 }
 
 .logo {
-    height: 120px;
+    display: inline-block;
+    background: rgb(0, 0, 254);
+    width: 5%;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .nav_item {
     display: inline-block;
     margin-right: 2em;
-    font-size: 20px;
-    line-height: 41px;
-    text-transform: uppercase;
     color: #fff;
     white-space: nowrap;
+    font-size: 20px;
+    text-transform: uppercase;
 }
 .social_item {
    display: inline-block; 
@@ -83,6 +112,7 @@ a {
 
 .speakers {
     color: black;
+    padding-top: 100px;
     padding-bottom: 40px;
 }
 
@@ -105,17 +135,19 @@ a {
 }
 .community,
 .speaker_wrapper {
-    cursor: pointer;
     vertical-align: top;
     display: inline-block;
     margin: 40px 20px;
     text-align: left;
 }
 
-.speaker_wrapper {
+.community {
     cursor: pointer;
+}
+
+.speaker_wrapper {
     min-height: 120px;
-    width: 400px;
+    width: 350px;
     vertical-align: top;
     display: inline-block;
     margin: 40px 20px;
@@ -132,30 +164,21 @@ a {
     transition: transform .1s ease-out;
 }
 
-.popup .speaker_photo {
-    float: left;
-    width: 220px;
-    height: 220px;
-    margin: 0 20px 10px 0;
-}
-
 .speaker_wrapper .meta {
-    display: inline-block;
     vertical-align: top;
     max-width: 265px;
-    margin: 9px 0 0 10px;
 }
 .speaker_wrapper .meta a {
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 100;
     background: transparent;
-    color: #1f419b;
-    font-weight: bold;
+    color: rgb(179, 179, 179);
 }
 .speaker_wrapper .meta a:hover {
     color: black;
 }
-.speaker_wrapper .meta a:before {
-    content: "• ";
+.speaker_twitter_acc:after {
+    content: ", ";
 }
 .speaker_wrapper .meta a:hover:before {
     color: #1f419b;
@@ -172,12 +195,21 @@ a {
     font-size: 20px;
     font-weight: 700;
     line-height: 10px;
+    margin-top: 20px;
 }
 
 .speaker_theme {
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 700;
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: rgb(0, 0, 254);
+    text-transform: capitalize;
+}
+
+.speaker_speech {
+    font-size: 16px;
+    margin-top: 20px;
 }
 
 .aboutText {
@@ -337,7 +369,7 @@ a {
     border-top: 0;
     margin: 0;
     padding: 15px 0 15px 10px;
-    background: url('../images/s2-bg.jpg') no-repeat center center fixed #333;
+    background: rgb(26, 26, 26);
     background-size: cover;
 }
 
@@ -490,10 +522,26 @@ Style the navigation menu
 
 
 @media (max-width: 900px) {
+    .top_nav {
+        display: none;
+    }
+    .top_nav_mobile {
+        display: block;
+    }
+
+    .lang-wrapper {
+        position: fixed;
+        top: 1em;
+        right: 1em;
+    }
 
     .nav_item {
         width: 100%;
         padding: 5px;
+    }
+
+    .lang-button {
+        width: 10%;
     }
 
     .speakers_wrapper {
@@ -549,6 +597,11 @@ Style the navigation menu
 }
 
 @media (max-width: 450px) {
+
+    .mobile_menu {
+        width: 70%;
+        min-width: 150px;
+    }
 
     .speaker_wrapper {
         width: 300px;

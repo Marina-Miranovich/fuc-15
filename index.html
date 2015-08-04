@@ -47,36 +47,35 @@
 <body>
 
 
-<header class="section section-1 centered top_header">
+<header class="top_header">
 
-    <div class="lang">
-        <a data-lang="ru-RU" href="#ru">ru</a>
-        <a data-lang="en-US" href="#en" class="lang-active">en</a>
-    </div>
+    <div class="logo centered">{&nbsp;&nbsp;}</div><!--
 
-    <!-- <div class="logo">Reserved for logo...</div> -->
-
-    <h1 data-l10n-id="header_title"></h1>
-    <h2 data-l10n-id="header_date" class="header_date"></h2>
-
-    <nav class="top_nav centered">
+    --><nav class="top_nav">
         <a href="index.html#speakers" data-l10n-id="nav_item_speakers" class="nav_item"></a>
         <!-- <a href="#program" data-l10n-id="nav_item_program" class="nav_item"></a> -->
         <a href="index.html#location" data-l10n-id="nav_item_location" class="nav_item"></a>
         <a href="index.html#sponsors" data-l10n-id="nav_item_sponsors" class="nav_item"></a>
         <!-- <a href="#moscow_guide" data-l10n-id="nav_item_moscow_guide" class="nav_item"></a> -->
         <a href="#about" data-l10n-id="nav_item_about" class="nav_item"></a>
-        <div class="social_item">
-            <a href="https://twitter.com/frontend_union" target="_blank" class="social twitter"></a>
-            <!-- <a href="#facebook" class="social facebook"></a> -->
-        </div>
-    </nav>
+    </nav><!--
+
+
+    --><div class="lang-wrapper">
+        <a data-lang="ru-RU" href="#ru" class="lang-toggle lang-active">en</a>
+        <a data-lang="en-US" href="#en" class="lang-toggle">ru</a>
+    </div>
+
 
     <div class="top_nav_mobile">
         <div class="hamburger">
             <div></div>
             <div></div>
             <div></div>
+        </div>
+        <div class="lang-wrapper">
+            <a data-lang="ru-RU" href="#ru" class="lang-toggle lang-active">en</a>
+            <a data-lang="en-US" href="#en" class="lang-toggle">ru</a>
         </div>
     </div>
 
@@ -99,63 +98,69 @@
 
 <section class="section centered speakers" id="speakers">
 
-    <h1 class="speakers_header" data-l10n-id="nav_item_speakers_header"></h1>
     <div class="speakers_wrapper">
 
         <div data-url="stepanova" class="speaker_wrapper show_popup">
             <img class="speaker_photo" src="images/speakers/stepanova_300-300.jpg" />
             <div class="meta">
-                <h2 class="speaker_name">Варя Степанова</h2>
-                <a href="https://twitter.com/toivonens" target="_blank">@toivonens</a>
-                <a href="#community">HelsinkiJS</a>
                 <h3 class="speaker_theme" data-l10n-id="speaker1_theme"></h3>
+                <h2 data-l10n-id="speaker1_name" class="speaker_name"></h2>
+                <a href="https://twitter.com/toivonens" target="_blank" class="speaker_twitter_acc">@toivonens</a>
+                <a href="#community">HelsinkiJS</a>
+                <p data-l10n-id="speaker1_speech" class="speaker_speech"></p>
             </div>
         </div>
         <div data-url="larchenko" class="speaker_wrapper show_popup">
             <img class="speaker_photo" src="images/speakers/Larchenko_300.jpg" />
             <div class="meta">
-                <h2 class="speaker_name">Михаил Ларченко</h2>
-                <a href="http://twitter.com/ashorror" target="_blank">@ashorror</a>
-                <a href="#community">WebNotBombs&nbsp;Amsterdam</a>
                 <h3 class="speaker_theme" data-l10n-id="speaker2_theme"></h3>
+                <h2 data-l10n-id="speaker2_name" class="speaker_name"></h2>
+                <a href="http://twitter.com/ashorror" target="_blank" class="speaker_twitter_acc">@ashorror</a>
+                <a href="#community">WebNotBombs&nbsp;Amsterdam</a>
+                <p data-l10n-id="speaker2_speech" class="speaker_speech"></p>
             </div>
         </div>
         <div data-url="dashukevich" class="speaker_wrapper show_popup">
             <img class="speaker_photo" src="images/speakers/dashukevich_300.jpg" />
             <div class="meta">
-                <h2 class="speaker_name">Вова Дашукевич</h2>
-                <a href="https://twitter.com/life__777" target="_blank">@life__777</a>
-                <a href="#community">4Front</a>
                 <h3 class="speaker_theme" data-l10n-id="speaker3_theme"></h3>
-            </div>
-        </div>
-        <div data-url="miranovich" class="speaker_wrapper show_popup">
-            <img class="speaker_photo" src="images/speakers/miranovich_300.jpg" />
-            <div class="meta">
-                <h2 class="speaker_name">Марина Миронович</h2>
-                <a href="https://twitter.com/obnoxious_mari" target="_blank">@obnoxious_mari</a>
-                <a href="#community">WebNotBombs&nbsp;Minsk</a>
-                <h3 class="speaker_theme" data-l10n-id="speaker4_theme"></h3>
-            </div>
-        </div>
-        <div data-url="monschke" class="speaker_wrapper show_popup">
-            <img class="speaker_photo" src="images/speakers/Monschke_300x300.jpeg" />
-            <div class="meta">
-                <h2 class="speaker_name">Jan Monschke</h2>
-                <a href="https://twitter.com/thedeftone" target="_blank">@thedeftone</a>
-                <a href="#community">BerlinJS</a>
-                <h3 class="speaker_theme" data-l10n-id="speaker5_theme"></h3>
+                <h2 data-l10n-id="speaker3_name" class="speaker_name"></h2>
+                <a href="https://twitter.com/life__777" target="_blank" class="speaker_twitter_acc">@life__777</a>
+                <a href="#community">4Front</a>
+                <p data-l10n-id="speaker3_speech" class="speaker_speech"></p>
             </div>
         </div>
         <div data-url="zhigalov" class="speaker_wrapper show_popup">
             <img class="speaker_photo" src="images/speakers/zhigalov_300x300.jpg" />
             <div class="meta">
-                <h2 class="speaker_name">Сергей Жигалов</h2>
-                <a href="https://twitter.com/sergey_zhigalov" target="_blank">@sergey_zhigalov</a>
-                <a href="#community">spb frontend</a>
                 <h3 class="speaker_theme" data-l10n-id="speaker6_theme"></h3>
+                <h2 data-l10n-id="speaker4_name" class="speaker_name"></h2>
+                <a href="https://twitter.com/sergey_zhigalov" target="_blank" class="speaker_twitter_acc">@sergey_zhigalov</a>
+                <a href="#community">spb frontend</a>
+                <p data-l10n-id="speaker6_speech" class="speaker_speech"></p>
             </div>
         </div>
+        <div data-url="monschke" class="speaker_wrapper show_popup">
+            <img class="speaker_photo" src="images/speakers/Monschke_300x300.jpeg" />
+            <div class="meta">
+                <h3 class="speaker_theme" data-l10n-id="speaker5_theme"></h3>
+                <h2 data-l10n-id="speaker5_name" class="speaker_name"></h2>
+                <a href="https://twitter.com/thedeftone" target="_blank" class="speaker_twitter_acc">@thedeftone</a>
+                <a href="#community">BerlinJS</a>
+                <p data-l10n-id="speaker5_speech" class="speaker_speech"></p>
+            </div>
+        </div>
+        <div data-url="miranovich" class="speaker_wrapper show_popup">
+            <img class="speaker_photo" src="images/speakers/miranovich_300.jpg" />
+            <div class="meta">
+                <h3 class="speaker_theme" data-l10n-id="speaker4_theme"></h3>
+                <h2 data-l10n-id="speaker6_name" class="speaker_name"></h2>
+                <a href="https://twitter.com/obnoxious_mari" target="_blank" class="speaker_twitter_acc">@obnoxious_mari</a>
+                <a href="#community">WebNotBombs&nbsp;Minsk</a>
+                <p data-l10n-id="speaker4_speech" class="speaker_speech"></p>
+            </div>
+        </div>
+
 <!--         <div data-url="halimova" class="speaker_wrapper show_popup">
             <img class="speaker_photo" src="images/speakers/fff.png" />
             <div class="meta">
