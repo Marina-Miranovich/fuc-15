@@ -162,7 +162,7 @@ $(function(){
 
 
     // Popups
-    $('.show_popup').click(function() {
+    /*$('.show_popup').click(function() {
         var popup = $("." + $(this).data('url'));
 
         if (popup.css('display') === 'block') {
@@ -181,7 +181,7 @@ $(function(){
     $('.overlay').click(function() {
         $('.overlay').hide();
         $('.popup').removeClass('active');
-    });
+    });*/
 
 
     /* Mobile */

@@ -17,7 +17,7 @@ a {
     overflow: hidden;
     width: 100%;
     position: fixed;
-    z-index: 9999;
+    z-index: 99;
 }
 
 .lang-toggle {
@@ -69,7 +69,7 @@ a {
     text-transform: uppercase;
 }
 .social_item {
-   display: inline-block; 
+   display: inline-block;
 }
 
 .lang {
@@ -112,7 +112,7 @@ a {
 
 .speakers {
     color: black;
-    padding-top: 100px;
+    padding-top: 180px;
     padding-bottom: 40px;
 }
 
@@ -177,6 +177,9 @@ a {
 .speaker_wrapper .meta a:hover {
     color: black;
 }
+.speaker_twitter_acc {
+    margin-top: 10px;
+}
 .speaker_twitter_acc:after {
     content: ", ";
 }
@@ -201,15 +204,15 @@ a {
 .speaker_theme {
     font-size: 26px;
     font-weight: 700;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 36px;
+    margin-bottom: 36px;
     color: rgb(0, 0, 254);
     text-transform: capitalize;
 }
 
 .speaker_speech {
     font-size: 16px;
-    margin-top: 20px;
+    margin-top: 36px;
 }
 
 .aboutText {
@@ -522,6 +525,10 @@ Style the navigation menu
 
 
 @media (max-width: 900px) {
+    .top_header {
+        position: static;
+        z-index: 0;
+    }
     .top_nav {
         display: none;
     }
