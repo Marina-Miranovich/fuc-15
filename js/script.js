@@ -110,7 +110,7 @@ $(function(){
 
 
 
-    var MAX_MOBILE_SCREEN_WIDTH = 900;
+    /*var MAX_MOBILE_SCREEN_WIDTH = 900;
 
     $(window).resize(function() {
         var screenWidth = $(window).width();
@@ -118,13 +118,13 @@ $(function(){
         isMobile = (screenWidth <= MAX_MOBILE_SCREEN_WIDTH);
 
         //stickyNav();
-        recalculateTopLeft();
+        //recalculateTopLeft();
     });
 
 
-    /*
+    /!*
     * Sticky menu
-    * */
+    * *!/
 
     var topNavElement = $('.top_nav'),
         screenWidth = $(window).width(),
@@ -153,12 +153,12 @@ $(function(){
                 topNavElement.removeClass('sticky');
             }
 
-    };
+    };*/
 
     //stickyNav();
-    $(window).scroll(function() {
-        //stickyNav();
-    });
+    /*$(window).scroll(function() {
+        stickyNav();
+    });*/
 
 
     // Popups
@@ -204,10 +204,10 @@ $(function(){
         e.preventDefault()
     });
 
-    $('.popup_close').click(function() {
+    /*$('.popup_close').click(function() {
         $('.popup').removeClass('active');
         $(".overlay").hide();
-    });
+    });*/
 
     var locales = [
             { lang: "en-US", href:"#en", html: 'en' },
@@ -220,7 +220,7 @@ $(function(){
     });
 
 
-    function recalculateTopLeft() {
+    /*function recalculateTopLeft() {
         var popup = $(".active");
 
         if (popup.length < 1) {
@@ -247,6 +247,6 @@ $(function(){
             top: top + '%',
             left: left + '%'
         });
-    }
+    }*/
 
 });

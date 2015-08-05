@@ -1,5 +1,5 @@
 body {
-    font-family: "FontAwesome", sans-serif !important;
+    font-family: 'PT Sans', sans-serif !important;
     overflow-x:hidden;
 }
 
@@ -12,12 +12,13 @@ a {
 */
 
 .top_header {
-    background: rgb(26, 26, 26);
+    background: #1a1a1a;
     background-size: cover;
     overflow: hidden;
     width: 100%;
     position: fixed;
     z-index: 99;
+    font-size: 22px;
 }
 
 .lang-toggle {
@@ -53,11 +54,12 @@ a {
 
 .logo {
     display: inline-block;
-    background: rgb(0, 0, 254);
+    background: #00f;
     width: 5%;
     color: white;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
 }
 
 .nav_item {
@@ -65,7 +67,6 @@ a {
     margin-right: 2em;
     color: #fff;
     white-space: nowrap;
-    font-size: 20px;
     text-transform: uppercase;
 }
 .social_item {
@@ -154,14 +155,9 @@ a {
     text-align: left;
 }
 
-.speaker_wrapper:hover > .speaker_photo {
-    transform: scale(1.1, 1.1);
-}
-
 .speaker_photo {
     width: 114px;
     height: 114px;
-    transition: transform .1s ease-out;
 }
 
 .speaker_wrapper .meta {
@@ -169,10 +165,9 @@ a {
     max-width: 265px;
 }
 .speaker_wrapper .meta a {
-    font-size: 14px;
-    font-weight: 100;
+    font-size: 16px;
     background: transparent;
-    color: rgb(179, 179, 179);
+    color: #b3b3b3;
 }
 .speaker_wrapper .meta a:hover {
     color: black;
@@ -195,23 +190,23 @@ a {
 }
 
 .speaker_name {
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: bold;
     line-height: 10px;
     margin-top: 20px;
 }
 
 .speaker_theme {
-    font-size: 26px;
-    font-weight: 700;
+    font-size: 40px;
+    font-weight: bold;
     margin-top: 36px;
     margin-bottom: 36px;
-    color: rgb(0, 0, 254);
+    color: #00f;
     text-transform: capitalize;
 }
 
 .speaker_speech {
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 36px;
 }
 
@@ -333,14 +328,15 @@ a {
     right: 45px;
 }
 
-.place{
+.place {
+    width: 90%;
     position: relative;
-    padding: 30px 70px 90px;
-    background: #168de2;
+    padding: 30px 35px 45px;
+    background: rgb(26,26,26);
 }
 
 .when-block .main-caption {
-    color: #ffa930;
+    color: rgb(175,205,255);
 }
 
 .section-3 {
@@ -529,7 +525,7 @@ Style the navigation menu
         position: static;
         z-index: 0;
     }
-    .top_nav {
+    .top_nav, .logo {
         display: none;
     }
     .top_nav_mobile {
@@ -538,8 +534,8 @@ Style the navigation menu
 
     .lang-wrapper {
         position: fixed;
-        top: 1em;
-        right: 1em;
+        top: 0.5em;
+        right: 0.5em;
     }
 
     .nav_item {
@@ -549,6 +545,10 @@ Style the navigation menu
 
     .lang-button {
         width: 10%;
+    }
+
+    .speakers {
+        padding-top: 70px;
     }
 
     .speakers_wrapper {
@@ -587,6 +587,14 @@ Style the navigation menu
         margin: auto;
     }
 
+}
+
+.date-event {
+    border-bottom: 1px solid #ccccff;
+}
+
+.date-event, .where-event {
+    font-weight: bold;
 }
 
 @media (max-width: 870px) {
