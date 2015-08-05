@@ -21,14 +21,14 @@ a {
     font-size: 22px;
 }
 
-.lang-toggle {
+a[data-lang] {
     display: none;
     color: white;
     text-transform: uppercase;
 }
 
 .lang-active {
-    display: inline-block;
+    display: inline-block !important;
 }
 
 .lang-wrapper {

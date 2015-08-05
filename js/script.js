@@ -1,22 +1,27 @@
 $(function(){
 
 
+    $('[data-lang]')
+        .on('click', function() {
+            document.l10n.requestLocales($(this).data('lang'));
+            var lang = $(this).data('lang');
 
-    document.l10n.addEventListener('ready', function(a,b){
-      if(document.l10n.supportedLocales.length){
-        $('[data-lang]').removeClass('lang-active')
-        .on('click', function(){
-          document.l10n.requestLocales($(this).data('lang'));
+            if (lang === 'en-US') {
+                $(this).html('ru').data('lang', 'ru-RU').attr('href', '#ru');
+            }
+            else if (lang === 'ru-RU') {
+                $(this).html('en').data('lang', 'en-US').attr('href', '#en');
+            }
+
         })
-        .filter('[data-lang='+document.l10n.supportedLocales[0]+']').addClass('lang-active');
+        .filter('[data-lang=' + document.l10n.supportedLocales[0] + ']')
+        .addClass('lang-active');
 
-      }
-    });
+
 
 
     // map
-    markerImage = "images/marker.png";
-
+    var markerImage = "images/marker.png";
     var markerImage1 = new google.maps.MarkerImage(markerImage, null, null, new google.maps.Point(15,40), new google.maps.Size(25,40));
     var HUGE_MAP_CENTER_LAT = 55.797042;
     var HUGE_MAP_CENTER_LNG = 37.537526;
@@ -46,7 +51,7 @@ $(function(){
                 lng: MEDIUM_MAP_CENTER_LNG
             };
         }
-    }
+    };
 
     var  initialize = function() {
         var coordinates = getCenterCoords();
@@ -79,7 +84,7 @@ $(function(){
             map: map,
             icon: markerImage1
         });
-    }
+    };
 
     initialize();
 
@@ -109,81 +114,6 @@ $(function(){
     });
 
 
-
-    /*var MAX_MOBILE_SCREEN_WIDTH = 900;
-
-    $(window).resize(function() {
-        var screenWidth = $(window).width();
-
-        isMobile = (screenWidth <= MAX_MOBILE_SCREEN_WIDTH);
-
-        //stickyNav();
-        //recalculateTopLeft();
-    });
-
-
-    /!*
-    * Sticky menu
-    * *!/
-
-    var topNavElement = $('.top_nav'),
-        screenWidth = $(window).width(),
-        isMobile = (screenWidth <= MAX_MOBILE_SCREEN_WIDTH),
-        stickyNavTop = topNavElement.offset().top,
-        stickyNav = function() {
-            var scrollTop = $(window).scrollTop();
-
-            if (scrollTop > stickyNavTop) {
-                if (isMobile) {
-                    topNavElement.hide();
-                    $('.top_nav_mobile').show();
-                }
-                else {
-                    $('.top_nav_mobile').hide();
-                    topNavElement.show();
-                    topNavElement.addClass('sticky')
-                }
-            }
-            else {
-                if (isMobile) {
-                    topNavElement.show();
-                    $('.top_nav_mobile').hide();
-                }
-
-                topNavElement.removeClass('sticky');
-            }
-
-    };*/
-
-    //stickyNav();
-    /*$(window).scroll(function() {
-        stickyNav();
-    });*/
-
-
-    // Popups
-    /*$('.show_popup').click(function() {
-        var popup = $("." + $(this).data('url'));
-
-        if (popup.css('display') === 'block') {
-            return false;
-        }
-
-        $('.popup').removeClass('active');
-
-        var overlay = $(".overlay");
-
-        popup.addClass('active');
-        recalculateTopLeft();
-        overlay.show();
-    });
-
-    $('.overlay').click(function() {
-        $('.overlay').hide();
-        $('.popup').removeClass('active');
-    });*/
-
-
     /* Mobile */
     $('.hamburger').click(function(event) {
         $('.mobile_menu').show();
@@ -203,50 +133,5 @@ $(function(){
     jQuery('.overlay_mobile_menu').bind('touchmove', function (e) {
         e.preventDefault()
     });
-
-    /*$('.popup_close').click(function() {
-        $('.popup').removeClass('active');
-        $(".overlay").hide();
-    });*/
-
-    var locales = [
-            { lang: "en-US", href:"#en", html: 'en' },
-            { lang: "ru-RU", href:"#ru", html: 'ru' } ],
-        toggleIndex = 1;
-
-    $('.lang-toggle').click(function(e) {
-       $(this).data('lang', locales[toggleIndex].lang).attr('href', locales[toggleIndex].href).html(locales[toggleIndex].html);
-        toggleIndex = toggleIndex === 1 ? 0: 1;
-    });
-
-
-    /*function recalculateTopLeft() {
-        var popup = $(".active");
-
-        if (popup.length < 1) {
-            return;
-        }
-
-        var screenWidth = $(window).width(),
-            screenHeight = $(window).height(),
-            popupWidth = popup.width(),
-            popupHeight = popup.height(),
-            paddingTop = popup.css("padding-top"),
-            paddingBottom = popup.css("padding-bottom"),
-            paddingLeft = popup.css("padding-left"),
-            paddingRight = popup.css("padding-right");
-
-        paddingTop = parseInt(paddingTop.substr(0, paddingTop.length - 2));
-        paddingBottom = parseInt(paddingBottom.substr(0, paddingBottom.length - 2));
-        paddingLeft = parseInt(paddingLeft.substr(0, paddingLeft.length - 2));
-        paddingRight = parseInt(paddingRight.substr(0, paddingRight.length - 2));
-        var left = ( ( (screenWidth - popupWidth - paddingLeft - paddingRight) / 2 ) / screenWidth ) * 100;
-        var top = ( ( (screenHeight - popupHeight - paddingTop - paddingBottom) / 2 ) / screenHeight ) * 100;
-
-        popup.css({
-            top: top + '%',
-            left: left + '%'
-        });
-    }*/
 
 });
