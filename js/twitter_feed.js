@@ -25,8 +25,7 @@ twttr.ready(function (twttr) {
             var tw_iframe = ev.target;
             var head = $(tw_iframe).contents().find( 'head' );
             if (head.length) {
-                head.append('<style type="text/css">.timeline { max-width: none !important; width: 99% !important; max-height: none !important; height: 95% !important; margin: 0 auto !important; } .timeline .stream { max-width: none !important; width: 99% !important; max-height: none !important; height: 95% !important; margin: 0 auto !important; } </style>');
-                console.log(head.html());
+                head.append('<style type="text/css">.timeline { max-width: none !important; width: 99% !important; max-height: none !important; height: 100% !important; margin: 0 auto !important; } .timeline .stream { max-width: none !important; width: 99% !important; max-height: none !important; height: 100% !important; margin: 0 auto !important; } </style>');
             }
         }
     )
